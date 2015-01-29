@@ -52,10 +52,14 @@ while z < 100:
 def foo1(x):
     return x ** 0.5
 
+#defines a function, foo1, with variable x. The function takes the squareroot of x
+
 def foo2(x, y): 
 	ifx>y:
 ￼￼￼   return x
 	return y
+#defines a function, foo2, with 2 variables, x and y. If x is greater than y then it will return x, else it will print y. 
+
 
 def foo3(x, y, z):
 	if x > y:
@@ -71,6 +75,8 @@ def foo3(x, y, z):
 		y=x
 		x = tmp
 	return [x, y, z]
+#makes a function where there are 3 variables, (x, y, and z). If x is larger than y, then x and y will switch. If y is greater than z, then y and z will switch.
+
 
 
 def foo4(x):
@@ -78,6 +84,7 @@ def foo4(x):
 	for i in range(1, x + 1):
 		result = result * i
     return result
+#makes a function where there is a variable x. Then there is a for loop from 1 to x+1 (or just x since exclusive). Then the value, i, in the for loop is multiplied by the result. The next loop the value, i, is mulitplied by the new result. 
 
 
 
@@ -91,3 +98,6 @@ def foo5(x):
     if x == 1:
        return 1
 return x * foo5(x - 1)
+
+#this function returns 1 if x equals 1. Then it will take the variable x and multiply by the result of itself (foo5) with the variable being (x-1)
+#i wasn't too sure on this one, it is hard to wrap my head around because it is like inception
